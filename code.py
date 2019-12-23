@@ -1,5 +1,8 @@
 import cv2
+import sys
 
-I  = cv2.imread('test.jpg')
+file_name = sys.argv[1]
+I  = cv2.imread(file_name)
+
 
 print(I.shape)
